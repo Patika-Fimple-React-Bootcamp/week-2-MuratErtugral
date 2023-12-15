@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Post List</h1>
+    </header>
+
+    <div class="container">
+        <!-- Input alanı -->
+
+        <div class="input-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="search"
+          placeholder="Search by title or body"
+        />
+        
+        <!-- Çarpı simgesini içeren span -->
+        <span id="clearIcon">&#10006;</span>
+        </div>
+  
+        <!-- Post listesi için container -->
+        <div id="postList"></div>
+      </div>
+
+    <div class="modal" id="commentModal">
+      <div class="modal-content" id="commentModalContent"></div>
+    </div>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
